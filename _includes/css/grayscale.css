@@ -12,6 +12,7 @@ body {
     height: 100%;
     font-family: 'Overlock', cursive;/*,Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     font-weight:400;
+    font-size: 12pt;
     color: #000;
     background-color: {{ site.color.primary-dark }};
 }
@@ -35,16 +36,16 @@ h6 {
     letter-spacing: 1px;
 }
 
-p {
+p.big {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
-    p {
+    p.big {
         margin: 0 0 35px;
-        font-size: 30px;
+        font-size: 18px;
         line-height: 1.6;
     }
 }
