@@ -27,13 +27,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+h2 a{
     color: #E2A44C;
     margin: 0 0 35px;
     /*text-transform: uppercase;*/
     font-family: 'Overlock',Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+h1.page-title
+{
+    margin-bottom: 40px;
 }
 
 p.big {
@@ -123,7 +129,7 @@ a:focus {
         padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
-        background-color: rgba(234,185,220,.3);/*rgba(255,255,255,.8);*/
+        background-color: rgba(226, 195, 157, 1);/*rgba(255,255,255,.8);*/
         /*background: 0 0;*/
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -157,16 +163,18 @@ h1 { color: black; }
 .intro {
     display: table;
     width: 100%;
-    padding: 100px 0;
+    padding: 40px 0;
     text-align: center;
     color: black;
-    background: url(/img/pots_blur2.jpg) no-repeat bottom center scroll;
+    background: url(/img/pots2.jpg) no-repeat bottom center;
     background-color: {{ site.color.primary-dark }};
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    /*-webkit-background-size: cover;
+    #-moz-background-size: cover;
+    #background-size: cover;
+    -o-background-size: cover;*/
 }
+.intro h1 { color: white; text-shadow: 2px 2px #000; }
+.intro h2  { color: white; text-shadow: 2px 2px #000; font-size: 16pt; }
 
 p.footer
 {
@@ -182,7 +190,7 @@ p.footer
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 @media(min-width:767px) {
@@ -193,10 +201,6 @@ p.footer
 
     .intro .intro-body .brand-heading {
         font-size: 80px;
-    }
-
-    .intro .intro-body .intro-text {
-        font-size: 35px;
     }
 }
 
