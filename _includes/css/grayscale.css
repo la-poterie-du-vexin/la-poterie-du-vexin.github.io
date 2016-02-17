@@ -330,6 +330,11 @@ p.footer
 }
 
 @media(min-width:767px) {
+
+    .intro {
+        margin-bottom: -100px;
+    }
+    
     .content-section {
         padding-top: 200px;
     }
