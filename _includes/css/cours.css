@@ -12,12 +12,14 @@
     font-weight: 600;
     float:left;
     width: 220px;
+    height: 150px;
     background-color: #dddddd;
     margin: 5px;
     border: 2px solid #aaaaaa;
     border-radius: 5px;
     padding: 10px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .cours .price
