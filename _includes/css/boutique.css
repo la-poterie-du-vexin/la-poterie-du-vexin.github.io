@@ -1,0 +1,88 @@
+
+.boutique_list
+{
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+
+
+.boutique_list .piece
+{
+    font-size: 20px;
+    font-weight: 600;
+    float:left;
+    width: 340px;
+    background-color: #fff;
+    margin: 5px;
+    border: 2px none #aaaaaa;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.boutique_list .piece .thumb
+{
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.boutique_list .piece img
+{
+    position: absolute;
+    bottom: 0;
+    vertical-align: text-bottom;
+}
+
+.boutique_list .piece .title
+{
+    font-weight: 700;
+
+    color: #318232;
+}
+
+.boutique_list .piece .info
+{
+    font-size: 14px;
+}
+
+.boutique_list .piece .price
+{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #318232;
+}
+
+
+
+
+.boutique_page .piece .title
+{
+    font-weight: 700;
+
+    color: #318232;
+}
+
+.boutique_page .piece .info
+{
+    font-size: 17px;
+}
+
+.boutique_page .piece .price
+{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+
+    color: #318232;
+}
+
+.boutique_page .piece img
+{
+    margin-bottom: 20px;
+    width: 80%;
+}
