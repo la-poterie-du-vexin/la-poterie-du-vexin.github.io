@@ -1,5 +1,5 @@
 _site
 tmp
-_site
+_site/*
 .jekyll-cache
 note.txt
