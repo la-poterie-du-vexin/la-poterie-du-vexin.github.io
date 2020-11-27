@@ -46,28 +46,7 @@
 
 
     </div>
-    <script type="text/javascript">
-
-        var my_time;
-        var count = 0;
-        my_time = setTimeout('pageScroll()', 1);
-        function pageScroll() {
-            // If condition to set repeat 
-            if (count < 2) {
-                var objDiv = document.getElementById("mosaic");
-                objDiv.scrollLeft = objDiv.scrollLeft + 1;
-                if (objDiv.scrollLeft == (objDiv.scrollWidth - 61)) {
-                    setTimeout(function () {
-                        objDiv.scrollLeft = 0;
-                        count++;
-                    }, 1200);
-                }
-                //set scrolling time start
-                my_time = setTimeout('pageScroll()', 20);
-                objDiv.addEventListener("mousedown", () => { clearInterval(my_time)});
-                objDiv.addEventListener("touchstart", () => { clearInterval(my_time)});
-                //set scrolling time end
-            }
-        }
-    </script>
+<script>
+    autoScrollMosaic("mosaic");
+</script>
 </header>
