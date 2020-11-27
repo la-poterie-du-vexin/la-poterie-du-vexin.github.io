@@ -1,0 +1,27 @@
+@import "colors";
+@import "main";
+
+.atelier-info {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  /* width: 100%; */
+}
+.atelier-info > div {
+  width: 360px;
+  margin: 30px;
+}
+
+.box {
+  @include paper;
+  .title {
+    padding: 30px;
+    margin: 0;
+    background-color: $primary-color;
+    color: $text-dark-color;
+  }
+  .content {
+    padding: 30px;
+  }
+}

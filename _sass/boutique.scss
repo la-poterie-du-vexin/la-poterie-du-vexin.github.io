@@ -1,0 +1,95 @@
+@import "colors";
+@import "main";
+
+.boutique_list
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+}
+
+
+.boutique_list .piece
+{
+    @include paper;
+
+    font-weight: 600;
+    float:left;
+    width: 360px;
+    margin: 5px;
+    border: 2px none #aaaaaa;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 10px;
+    text-align: left;
+    transition: ease-out;
+    /* transition-property: background-color; */
+    transition-duration: 500ms;
+
+    margin: 10px 0;
+
+}
+
+.boutique_list ul, .boutique_page ul {
+
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.boutique_list .piece:hover {
+    background-color: rgba(0,0,0,0.15);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.boutique_list .piece .thumb
+{
+    position: relative;
+    height: 300px;
+    margin-bottom: 20px;
+}
+.boutique_list .piece img
+{
+    border-radius: 3px;
+ 
+}
+
+.piece .title
+{
+    font-size: 30px;
+    font-weight: 700;
+
+    color:$secondary-color;
+}
+
+.piece .price_div
+{
+    margin-top: 10px;
+    font-weight: 700;
+    text-align: right;
+    color: $terciary-color;
+}
+ .piece .price
+{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.boutique_page .images {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.boutique_page .images img {
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.boutique_page .images > * {
+    margin: 10px;
+  }
+
+
+.boutique_page .piece .price_div {
+    text-align: left;
+
+}

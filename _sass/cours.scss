@@ -1,0 +1,64 @@
+@import "colors";
+@use "main";
+
+.cours-main-container {
+    display: flex;
+    flex-flow: wrap; 
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cours-main-container > * {
+    @include paper;
+
+    max-width: 400px;
+    margin: 20px;
+}
+.cours_list
+{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+}
+
+.cours
+{
+    @include paper
+    
+    /* font-family: 'Overlock', cursive; */
+
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    /* border:solid 5px hsla(0, 95%, 35%, 1); */
+    border:solid 5px hsla(0, 0%, 0%, .5);
+
+    font-size: 20px;
+    font-weight: 600;
+    width: 150px;
+    color: $primary-color;
+    background-color: rgba(0,0,0,0.05);
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cours .price
+{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 30px;
+
+    color:$terciary-color;
+}
+.cours_enfant
+{
+}
+
+.cours_adulte
+{
+}
+
+.cours .price_per_hour
+{
+    color: $terciary-color;
+    font-weight: 500;
+}

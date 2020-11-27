@@ -1,0 +1,73 @@
+@import "colors";
+
+
+.intro {
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  box-sizing: border-box;
+  text-align: center;
+  background-size: fill;
+  background: url(/img/pots.jpg)  repeat top center scroll;
+}
+
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+
+.intro-text {
+  background: radial-gradient(rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 70%);
+  border-radius: 10px;
+  padding: 10px;
+}
+.intro .intro-body .intro-text {
+  font-size: 20px;
+}
+
+@media(min-width:767px) {
+  .intro {
+      padding-top: 30vh;
+      height: 100vh;
+      /* padding: 0; */
+      /* padding-top: 150px; */
+  }
+
+  .intro .intro-body .brand-heading {
+      font-size: 80px;
+  }
+  .intro-mosaic {
+    position: absolute;
+    bottom: 0px;
+
+  }
+}
+
+.intro-mosaic {
+  display: flex;
+}
+.intro-mosaic img {
+  display: block
+}
+.intro-logo
+{
+  /* float: left; */
+  /* margin-right: 50px; margin-top: -50px; */
+}
+
+@media(max-width:767px) {
+  
+  .intro-logo
+  {
+      margin-top: 150px;        
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      float: none;
+      display: block;
+  }
+}
+.intro .btn {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 5px hsla(0, 95%, 35%, 1);
+}

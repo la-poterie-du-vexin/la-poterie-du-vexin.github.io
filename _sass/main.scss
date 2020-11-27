@@ -1,0 +1,252 @@
+@import "colors";
+
+@import url(https://fonts.googleapis.com/css?family=Overlock:400,700,900,400italic,700italic);
+// @import 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700;900&display=swap';
+
+body {
+    width: 100%;
+    height: 100%;
+    /* font-family: 'Overlock', cursive; */
+    font-family: arial,sans-serif;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-weight:400;
+    font-size: 12pt;
+    color: $text-color;
+    background-color: $text-dark-color;
+}
+
+.title-font {
+    font-family: 'Overlock', cursive;    
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h2 a{
+    font-family: 'Overlock', cursive;
+    
+    color:$primary-color;
+    margin: 0px 0 25px;
+    /*text-transform: uppercase;*/
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+h1.page-title
+{
+    margin-bottom: 40px;
+}
+
+p.big {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:767px) {
+    p.big {
+        margin: 0 0 35px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: $links-color;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.background-image
+{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background: url(/img/pots_blur2.jpg) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+.intro h2  {font-size: 16pt; }
+
+p.footer
+{
+    font-size: 12pt;
+}
+
+
+
+.content-section {
+    padding-top: 100px;
+}
+
+.contact-section {
+    width: 100%;
+    padding: 50px 0;
+    background: url(/img/herbe_pots.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+@media(min-width:767px) {
+
+    .intro {
+        margin-bottom: -100px;
+    }
+    
+    .content-section {
+        padding-top: 200px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+
+    #map {
+        height: 400px;
+        margin-top: 250px;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid $links-color;
+    color: $links-color;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid $links-color;
+    outline: 0;
+    color: $text-dark-color;
+    background-color: $links-color;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+ul.banner-social-buttons li {
+    margin-bottom: 15px;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 50px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+
+.title_frame {  
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    background: url(/img/pots.jpg) no-repeat top center scroll;
+    margin-bottom: 50px;
+}
+
+@media(min-width:767px) {
+    .title_frame {
+        padding-top: 100px;
+    }    
+}
+
+.title_frame h1 {
+    color: $text-dark-color;
+}    
+
+.title_frame .text {
+    padding: 10px 40px;
+    color: $text-dark-color;
+    background: radial-gradient(rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 70%);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@mixin paper {
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}

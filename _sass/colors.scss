@@ -1,0 +1,40 @@
+
+
+$text-color: #291300;
+$text-dark-color: #ffe2d3e3;
+$primary-color: #643C2B;
+$primary-dark-color: #EAC9C1;
+$secondary-color: #D94E34;
+$terciary-color: #80704D;
+$primary-dark-color: #FFFFFF;
+$links-color: #D94E34;
+
+.secondary-background {
+  background-color: $secondary-color;
+  color: $text-dark-color;
+}
+
+.primary-background {
+  background-color: $primary-color;
+  color: $text-dark-color;
+}
+
+.terciary-background {
+  background-color: $terciary-color;
+  color: $text-dark-color;
+}
+
+.text-dark {
+  color: $text-dark-color;
+}
+
+
+.btn:hover {
+  color: $secondary-color;
+}
+.secondary-background.btn:hover  {
+  color: $primary-color;
+}
+.terciary-background.btn:hover  {
+  color: $primary-color;
+}
