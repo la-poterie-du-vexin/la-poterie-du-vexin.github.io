@@ -59,6 +59,7 @@
 .intro-mosaic {
   display: flex;
   max-width: 100%;
+  overflow: hidden;
 }
 
 @media(max-width:500px) {
