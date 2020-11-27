@@ -12,12 +12,10 @@
 .boutique_list .piece
 {
     @include paper;
-
     font-weight: 600;
     float:left;
     width: 360px;
     border: 2px none #aaaaaa;
-    border-radius: 5px;
     padding: 30px;
     padding-bottom: 10px;
     text-align: left;
@@ -52,8 +50,7 @@
 }
 .boutique_list .piece img
 {
-    border-radius: 3px;
- 
+    @include rounded-corners; 
 }
 
 .piece .title
@@ -84,9 +81,10 @@
     flex-flow: wrap;
 }
 .boutique_page .images img {
-    border-radius: 3px;
+    @include rounded-corners;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
+
 
 .boutique_page .images > * {
     margin: 10px;

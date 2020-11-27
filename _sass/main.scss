@@ -63,7 +63,7 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: underline;
+    text-decoration: none;
     color: $links-hover-color;
 }
 
@@ -285,4 +285,5 @@ body {
     padding: 15px;
     background-color: #c51a1a;
     font-size: 20px;
+    margin-bottom: 20px;
 }
