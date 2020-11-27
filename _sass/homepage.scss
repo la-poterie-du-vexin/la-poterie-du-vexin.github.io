@@ -45,6 +45,8 @@
 
 .intro-mosaic {
   display: flex;
+  max-width: 100%;
+  overflow: scroll;
 }
 .intro-mosaic img {
   display: block
