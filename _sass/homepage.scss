@@ -25,7 +25,20 @@
   font-size: 20px;
 }
 
+.intro a {
+  margin-bottom: 10px;
+}
+
+@media(max-width:767px) {
+  .big-logo-homepage {
+    margin-top: 40px;
+    height: 100px;
+  }
+}
 @media(min-width:767px) {
+  .big-logo-homepage {
+    margin-top: -40px;
+  }
   .intro {
       padding-top: 30vh;
       height: 100vh;
@@ -51,24 +64,7 @@
 .intro-mosaic img {
   display: block
 }
-.intro-logo
-{
-  /* float: left; */
-  /* margin-right: 50px; margin-top: -50px; */
-}
 
-@media(max-width:767px) {
-  
-  .intro-logo
-  {
-      margin-top: 150px;        
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      float: none;
-      display: block;
-  }
-}
 .intro .btn {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border:solid 5px hsla(0, 95%, 35%, 1);
