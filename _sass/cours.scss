@@ -23,10 +23,7 @@
 
 .cours
 {
-    @include paper
-    
-    /* font-family: 'Overlock', cursive; */
-
+    @include paper;
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     /* border:solid 5px hsla(0, 95%, 35%, 1); */
     border:solid 5px hsla(0, 0%, 0%, .5);
