@@ -8,6 +8,13 @@
     justify-content: space-evenly;
 }
 
+@mixin full-width-on-mobile {
+    @media(max-width:400px) {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+}
 
 .boutique_list .piece
 {
@@ -16,17 +23,17 @@
     font-weight: 600;
     float:left;
     width: 360px;
-    margin: 5px;
     border: 2px none #aaaaaa;
     border-radius: 5px;
     padding: 30px;
     padding-bottom: 10px;
     text-align: left;
     transition: ease-out;
-    /* transition-property: background-color; */
     transition-duration: 500ms;
 
     margin: 10px 0;
+    text-align: center;
+    @include full-width-on-mobile;
 
 }
 
