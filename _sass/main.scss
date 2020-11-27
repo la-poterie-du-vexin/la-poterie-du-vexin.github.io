@@ -7,7 +7,7 @@ body {
     height: 100%;
     font-family: arial,sans-serif;
     font-weight:400;
-    font-size: 12pt;
+    font-size: 14pt;
     color: $text-color;
     background-color: $text-dark-color;
 }
@@ -31,17 +31,14 @@ h2 a{
     font-family: 'Overlock', cursive;
     
     color:$primary-color;
-    margin: 0px 0 25px;
+}
+
+h1 {
+    font-weight: 900;
+}
+h2 {
     font-weight: 700;
-    letter-spacing: 1px;
 }
-
-
-h1.page-title
-{
-    margin-bottom: 40px;
-}
-
 p.big {
     margin: 0 0 25px;
     font-size: 18px;
@@ -61,12 +58,13 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    text-decoration: none;
-    color: $secondary-color;
+    text-decoration: underline;
+    color: $links-hover-color;
 }
 
 .light {
@@ -242,9 +240,19 @@ body {
     font-size: 20px;
 }
 
+@mixin rounded-corners {
+    border-radius: 5px;
+}
+@mixin rounded-top-corners {
+    border-radius: 5px 5px 0 0 ;
+}
 @mixin paper {
+    @include rounded-corners;
     background-color: rgba(0,0,0,0.1);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.paper {
+    @include paper;
 }
 
 @mixin full-width-on-mobile {
@@ -253,4 +261,28 @@ body {
         margin-left: 0;
         width: 100%;
     }
+}
+
+.box {
+    @include paper;
+    margin-bottom: 20px;
+    .title {
+      @include rounded-top-corners;
+      font-size: 30px;
+      padding: 30px;
+      margin: 0;
+      background-color: $primary-color;
+      color: $text-dark-color;
+    }
+    .content {
+      padding: 30px;
+    }
+}
+
+.important-info {
+    @include paper;
+    color: $text-dark-color;
+    padding: 15px;
+    background-color: #c51a1a;
+    font-size: 20px;
 }

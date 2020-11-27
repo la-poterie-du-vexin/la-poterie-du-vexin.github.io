@@ -8,6 +8,16 @@ $secondary-color: #D94E34;
 $terciary-color: #80704D;
 $primary-dark-color: #FFFFFF;
 $links-color: #D94E34;
+$links-hover-color: darken($links-color, 20%);
+
+.text-color { color: $text-color;}
+.text-dark-color { color: $text-dark-color;}
+.primary-color { color: $primary-color;}
+.primary-dark-color { color: $primary-dark-color;}
+.secondary-color { color: $secondary-color;}
+.terciary-color { color: $terciary-color;}
+.primary-dark-color { color: $primary-dark-color;}
+.links-color { color: $links-color;}
 
 .secondary-background {
   background-color: $secondary-color;
@@ -24,17 +34,19 @@ $links-color: #D94E34;
   color: $text-dark-color;
 }
 
-.text-dark {
-  color: $text-dark-color;
-}
-
 
 .btn:hover {
-  color: $secondary-color;
+  background-color: darken($primary-color, 10%);
+  // color: $secondary-color;
+  color: $text-dark-color;
 }
 .secondary-background.btn:hover  {
-  color: $primary-color;
+  // color: $primary-color;
+  color: $text-dark-color;
+  background-color: darken($secondary-color, 20%);
 }
 .terciary-background.btn:hover  {
-  color: $primary-color;
+  color: $text-dark-color;
+  background-color: darken($terciary-color, 10%);
+  // color: $primary-color;
 }

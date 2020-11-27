@@ -10,18 +10,5 @@
 .atelier-info > div {
   @include full-width-on-mobile;
   width: 360px;
-  margin: 30px;
-}
-
-.box {
-  @include paper;
-  .title {
-    padding: 30px;
-    margin: 0;
-    background-color: $primary-color;
-    color: $text-dark-color;
-  }
-  .content {
-    padding: 30px;
-  }
+  margin: 20px;
 }

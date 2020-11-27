@@ -1,79 +1,22 @@
 @import "colors";
-
+@import "main";
 
 .navbar{
   font-family: 'Overlock', cursive;
-}
-
-.navbar-custom {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgba(0,0,0,.3);
-  /*text-transform: uppercase;*/
+  color: $text-dark-color;
   background-color: $primary-color;
 }
 
-.navbar-custom .navbar-brand {
-  font-weight: 400;
-}
 
-.navbar-custom .navbar-brand:focus {
-  outline: 0;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle {
-  padding: 4px 6px;
-  font-size: 16px;
-}
-
-.navbar-custom .navbar-brand .navbar-toggle:focus,
-.navbar-custom .navbar-brand .navbar-toggle:active {
-  outline: 0;
-}
-
-.navbar-custom a {
+.navbar a {
+  @include rounded-corners;
   color: $text-dark-color;
-  font-size: 18pt;
+  font-size: 20px;
+  
 }
 
-.navbar-custom .nav li.active {
-  outline: nonte;
-  background-color: rgba(255,255,255,.3);
-}
-
-.navbar-custom .nav li a {
-  -webkit-transition: background .3s ease-in-out;
-  -moz-transition: background .3s ease-in-out;
-  transition: background .3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a.active {
-  outline: 0;
-  background-color: rgba(255,255,255,.3);
-}
-
-
-@media(min-width:767px) {
-  .navbar {
-      padding: 20px 0;
-      border-bottom: 0;
-      letter-spacing: 1px;
-      color: $text-dark-color;
-      background-color: $primary-color;/*rgba(255,255,255,.8);*/
-      /*background: 0 0;*/
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
-  }
-
-  .top-nav-collapse {
-      padding: 0;
-      color: $text-dark-color;
-      background-color: $primary-color;/*rgba(126, 92, 73, 1);*//*#EAB9DC;*/ /*$primary-dark-color;*/
-  }
-
-  .navbar-custom.top-nav-collapse {
-      border-bottom: 1px solid rgba(0,0,0,.3);
-  }
+.navbar a:hover {
+  background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+    color: $text-dark-color;
 }

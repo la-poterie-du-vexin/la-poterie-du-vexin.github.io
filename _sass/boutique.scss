@@ -39,6 +39,11 @@
     background-color: rgba(0,0,0,0.15);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
+.boutique_list a:hover, .boutique_list a{
+    text-decoration: none;   
+    color: $text-color;
+}
+
 .boutique_list .piece .thumb
 {
     position: relative;
