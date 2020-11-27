@@ -12,19 +12,26 @@
 .boutique_list .piece
 {
     @include paper;
+    @include full-width-on-mobile;
+
     font-weight: 600;
-    float:left;
-    width: 360px;
+    width: 300px;
     border: 2px none #aaaaaa;
-    padding: 30px;
     padding-bottom: 10px;
     text-align: left;
     transition: ease-out;
     transition-duration: 500ms;
 
     margin: 10px 0;
-    @include full-width-on-mobile;
+    font-size: 15px;
 
+}
+
+.boutique_list .piece .title {
+    padding: 0px;
+}
+.boutique_list .piece .content {
+    padding: 15px;
 }
 
 .boutique_list ul, .boutique_page ul {
@@ -42,20 +49,10 @@
     color: $text-color;
 }
 
-.boutique_list .piece .thumb
-{
-    position: relative;
-    height: 300px;
-    margin-bottom: 20px;
-}
-.boutique_list .piece img
-{
-    @include rounded-corners; 
-}
 
 .piece .title
 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 
     color:$secondary-color;
@@ -94,4 +91,34 @@
 .boutique_page .piece .price_div {
     text-align: left;
 
+}
+
+.boutiqueFiltersContainer {
+    background-color:#ffe5d7;
+}
+
+
+@media(max-width:700px) {
+    .boutiqueFiltersContainer {
+        display: none;
+    }
+}
+
+#boutiqueTagFilters , #boutiqueMaterialFilters {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#boutiqueTagFilters .form-check, #boutiqueMaterialFilters .form-check {
+    // width: 200px;
+}
+
+#boutiqueTagFilters {
+    columns: 4;
+    // width: 200px;
+}
+
+.filterTitle {
+    font-size: 20px;
+    font-weight: 600;
 }

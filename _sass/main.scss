@@ -266,7 +266,7 @@ body {
 .box {
     @include paper;
     margin-bottom: 20px;
-    .title {
+    > .title {
       @include rounded-top-corners;
       font-size: 30px;
       padding: 30px;
