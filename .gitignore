@@ -1,1 +1,5 @@
 _site
+tmp
+_site
+.jekyll-cache
+note.txt

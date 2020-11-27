@@ -2,6 +2,7 @@
 title: "La Poterie du Vexin: Atelier de poterie dans l'Eure (27), Normandie, proche de Rouen, les Andelys et Louvier."
 
 email: lapoterieduvexin@hotmail.fr
+phone: "06 01 71 90 31"
 url: poterie-vexin.fr
 description: "La Poterie du Vexin est un atelier de poterie situé proche de Rouen à Amfreville sous les monts dans l'Eure, entre la ville de Louviers et les Andelys en Normandie. Des cours de poterie au tour y sont donnés et les céramiques de Pascale Garrigues y sont mises en vente."
 
@@ -10,8 +11,14 @@ color:
 #  primary-dark: '#000000'
 #  links: '#219ab3'
 
+  text: '#291300'
+  text-dark: '#ffe2d3e3'
+  primary: '#643C2B'
+  primary-dark: '#EAC9C1'
+  secondary: '#D94E34'
+  terciary: '#80704D'
   primary-dark: '#FFFFFF'
-  links: '#555555'
+  links: '#D94E34'
 
 # Footer settings
 footer: La Poterie du Vexin
