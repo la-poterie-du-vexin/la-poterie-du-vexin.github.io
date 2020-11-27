@@ -15,7 +15,7 @@
                 </h1>
 
                 <h2 class="intro-text text-dark">
-                    <p>Vente de céramiques artisanales utilitaires décoratives<br/> et cours de poterie
+                    <p>Vente de céramiques artisanales utilitaires décoratives<br /> et cours de poterie
                         au tour dans l'Eure (27)</p>
                     <a href="/cours-de-poterie-tour-louviers-les-andelys-eure" class="btn btn-lg primary-background">
                         les Cours
@@ -32,7 +32,7 @@
         </div>
 
     </div>
-    <div class="intro-mosaic">
+    <div id=mosaic class="intro-mosaic">
         <img src="img/photos_en_vrac/porcelaine_tout_juste_finies_de_tourner.jpg" height=150 />
         <img src="img/cours/enfant3_512.JPG" height=150 />
         <img src="img/tour.jpg" height=150 />
@@ -46,4 +46,28 @@
 
 
     </div>
+    <script type="text/javascript">
+
+        var my_time;
+        var count = 0;
+        my_time = setTimeout('pageScroll()', 1);
+        function pageScroll() {
+            // If condition to set repeat 
+            if (count < 2) {
+                var objDiv = document.getElementById("mosaic");
+                objDiv.scrollLeft = objDiv.scrollLeft + 1;
+                if (objDiv.scrollLeft == (objDiv.scrollWidth - 61)) {
+                    setTimeout(function () {
+                        objDiv.scrollLeft = 0;
+                        count++;
+                    }, 1200);
+                }
+                //set scrolling time start
+                my_time = setTimeout('pageScroll()', 20);
+                objDiv.addEventListener("mousedown", () => { clearInterval(my_time)});
+                objDiv.addEventListener("touchstart", () => { clearInterval(my_time)});
+                //set scrolling time end
+            }
+        }
+    </script>
 </header>

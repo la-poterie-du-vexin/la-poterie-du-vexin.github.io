@@ -59,12 +59,16 @@
 .intro-mosaic {
   display: flex;
   max-width: 100%;
-  overflow: scroll;
-}
-.intro-mosaic img {
-  display: block
 }
 
+@media(max-width:500px) {
+  .intro-mosaic {
+    overflow: scroll;
+  }
+}
+    .intro-mosaic img {
+    display: block
+  }
 .intro .btn {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border:solid 5px hsla(0, 95%, 35%, 1);
