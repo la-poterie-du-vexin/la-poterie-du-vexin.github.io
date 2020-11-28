@@ -18,27 +18,34 @@ title: Vente de poteries artisanales en ligne
     {% include boutique_instructions.html %}
 
   </div>
-  <div class="row boutiqueFiltersContainer" style="padding-top: 70px; top: 0; position: sticky;">
-    
-    <div class=container style="display: flex;">
+  <div class="row">
+
+    <div id=boutiqueFiltersContainer class="container boutiqueFiltersContainer">
+
+      <button type="button" onclick="toggleDisplayBlock('boutiqueFiltersContainer')" class="btn-close mobile-only"
+        aria-label="Close">
+
+      </button>
 
       <div style="margin-right: 10px;">
         <span class="filterTitle">Materiaux</span>
         <ul id="boutiqueMaterialFilters">
         </ul>
       </div>
-      
+
       <div style="flex-grow: 1;">
         <span class="filterTitle">Catégories</span>
-        <ul id="boutiqueTagFilters"  style=" ">
+        <ul id="boutiqueTagFilters">
         </ul>
       </div>
-      
+
+
+      <script defer src="/js/boutique.js"></script>
     </div>
-
-    <script defer src="/js/boutique.js"></script>
   </div>
-
+  <div class="mobile-only boutique-filter-mobile-button">
+    <a href="#" onclick="toggleDisplayBlock('boutiqueFiltersContainer')"><i class="fa fa-filter"></i></a>
+  </div>
   <div class="row">
     <div id=boutique_list class="boutique_list">
       {% include boutique_list.html %}

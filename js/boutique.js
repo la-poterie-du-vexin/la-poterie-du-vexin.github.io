@@ -100,3 +100,12 @@ function shuffleBoutiqueList() {
 }
 createFilterBoxes();
 shuffleBoutiqueList();
+function toggleDisplayBlock(elt_) {
+    let elt = elt_;
+    if (!elt.classList)
+        elt = document.getElementById(elt_);
+    if (elt.style.display !== "block")
+        elt.style.display = 'block';
+    else
+        elt.style.display = 'none';
+}

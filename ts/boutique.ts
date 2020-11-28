@@ -37,7 +37,7 @@ var hiddenbox = document.createElement('div');
 function isVisible(elt: HTMLDivElement) {
 
   let classes = elt.className.split(" ");
-  
+
   // check material.
   let material = allMaterials.find(m => classes.includes(m));
   if (!material) return false;
@@ -57,7 +57,7 @@ function render() {
   let elements = document.getElementsByClassName("piece");
   Array.prototype.forEach.call(elements, elt => {
     // if (!isVisible(elt))
-      // hiddenbox.appendChild(elt);
+    // hiddenbox.appendChild(elt);
     elt.style.display = isVisible(elt) ? "block" : "none";
     // elt.style.visibility = isVisible(elt) ? "visible" : "collapse";
   });
@@ -115,8 +115,19 @@ function shuffleBoutiqueList() {
 
   for (var i = list.children.length; i >= 0; i--) {
     list.appendChild(list.children[Math.random() * i | 0]);
-}
+  }
 }
 
 createFilterBoxes();
 shuffleBoutiqueList();
+
+function toggleDisplayBlock(elt_: HTMLElement|string) {
+  let elt = elt_ as HTMLDivElement;
+  if (!elt.classList)
+    elt = document.getElementById(elt_ as string) as HTMLDivElement;
+
+  if (elt.style.display !== "block")
+    elt.style.display = 'block';
+  else
+    elt.style.display = 'none';
+}
