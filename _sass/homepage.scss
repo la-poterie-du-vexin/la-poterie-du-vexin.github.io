@@ -30,13 +30,13 @@
   text-decoration: none;
 }
 
-@media(max-width:767px) {
+@media(max-width:992px) {
   .big-logo-homepage {
-    margin-top: 40px;
     height: 100px;
   }
 }
-@media(min-width:767px) {
+
+@media(min-width:992px) {
   .big-logo-homepage {
     margin-top: -40px;
   }
@@ -68,7 +68,8 @@
     overflow: scroll;
   }
 }
-    .intro-mosaic img {
+
+.intro-mosaic img {
     display: block
   }
 .intro .btn {

@@ -20,3 +20,11 @@
     text-decoration: none;
     color: $text-dark-color;
 }
+
+.navbar-toggler {
+  color: $text-dark-color;
+}
+
+@media(max-width: 500px) {
+  .navbar-call-button { display: block; }
+}
