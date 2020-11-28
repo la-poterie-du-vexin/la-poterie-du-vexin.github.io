@@ -288,3 +288,10 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+@media(min-width:500px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
