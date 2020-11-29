@@ -109,3 +109,7 @@ function toggleDisplayBlock(elt_) {
     else
         elt.style.display = 'none';
 }
+function toggleFilterModal() {
+    toggleDisplayBlock('boutiqueFiltersBackdrop');
+    toggleDisplayBlock('boutiqueFiltersContainer');
+}

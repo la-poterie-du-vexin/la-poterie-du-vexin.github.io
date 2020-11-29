@@ -99,22 +99,36 @@
     top: 0;
     display: flex;
     position: sticky;
-    .close-button { display: none; }       
+    .close-button { display: none;   float: right;  display: inline;    color: $text-dark-color;     }       
+    .header {
+        background-color: $primary-color;
+        color: $text-dark-color;
+    }
 }
+#boutiqueFiltersBackdrop { display: none; }
 @media(max-width:500px) {
-    .btn-close {
-        width: 100%;
-        text-align: right;
+    #boutiqueFiltersBackdrop {
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index:10000;
     }
     .boutiqueFiltersContainer {
-        padding: 20px;
+        @include rounded-corners;
+        padding: 0px;
+        .header, .content {
+            padding: 20px;
+        }
         flex-direction: column;
         display: none;
         position: fixed;
         width: 80vw; 
         height: 80vh;
 
-        margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+        margin: 10vh auto; /* Will not center vertically and won't work in IE6/7. */
         left: 0;
         right: 0;
 
@@ -122,7 +136,6 @@
 
         overflow: scroll;
         z-index: 10000;
-        .close-button { display: block; } 
         #boutiqueTagFilters {
             columns: 2;
         }      
@@ -144,15 +157,14 @@
 }
 
 .boutique-filter-mobile-button {
+    cursor: pointer;
     position: fixed; 
     left: 10px;
     bottom: 10px;
     width: 60px;
     height: 60px;
     background: $secondary-color;
-    a, a:focus, a:hover {
-        color: $text-dark-color;
-    }
+    color: $text-dark-color;
     padding: 20px;
     border-radius: 400px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.3);

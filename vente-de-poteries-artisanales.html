@@ -20,31 +20,37 @@ title: Vente de poteries artisanales en ligne
   </div>
   <div class="row">
 
+    <div id="boutiqueFiltersBackdrop" onclick="toggleFilterModal(); return false;"></div>
     <div id=boutiqueFiltersContainer class="container boutiqueFiltersContainer">
-
-      <button type="button" onclick="toggleDisplayBlock('boutiqueFiltersContainer')" class="btn-close mobile-only"
-        aria-label="Close">
-
-      </button>
-
-      <div style="margin-right: 10px;">
-        <span class="filterTitle">Materiaux</span>
-        <ul id="boutiqueMaterialFilters">
-        </ul>
+      <div class="header mobile-only">
+        <i class="fa fa-filter"></i> Filtres
+        <a href="#" onclick="toggleFilterModal(); return false;"
+          class="close-button mobile-only" aria-label="Close">
+          <i class="fa fa-times"></i>
+        </a>
       </div>
 
-      <div style="flex-grow: 1;">
-        <span class="filterTitle">Catégories</span>
-        <ul id="boutiqueTagFilters">
-        </ul>
-      </div>
+      <div class=content>
 
+        <div style="margin-right: 10px;">
+          <span class="filterTitle">Materiaux</span>
+          <ul id="boutiqueMaterialFilters">
+          </ul>
+        </div>
+
+        <div style="flex-grow: 1;">
+          <span class="filterTitle">Catégories</span>
+          <ul id="boutiqueTagFilters">
+          </ul>
+        </div>
+
+      </div>
 
       <script defer src="/js/boutique.js"></script>
     </div>
   </div>
-  <div class="mobile-only boutique-filter-mobile-button">
-    <a href="#" onclick="toggleDisplayBlock('boutiqueFiltersContainer')"><i class="fa fa-filter"></i></a>
+  <div onclick="toggleFilterModal(); return false;" class="mobile-only boutique-filter-mobile-button">
+    <i class="fa fa-filter"></i>
   </div>
   <div class="row">
     <div id=boutique_list class="boutique_list">

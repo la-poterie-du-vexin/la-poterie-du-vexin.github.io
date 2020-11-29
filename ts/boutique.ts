@@ -131,3 +131,8 @@ function toggleDisplayBlock(elt_: HTMLElement|string) {
   else
     elt.style.display = 'none';
 }
+
+function toggleFilterModal() {
+  toggleDisplayBlock('boutiqueFiltersBackdrop');
+  toggleDisplayBlock('boutiqueFiltersContainer');
+}
