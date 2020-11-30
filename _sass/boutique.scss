@@ -56,6 +56,7 @@
     font-weight: 700;
 
     color:$secondary-color;
+    font-family: $styled-font;
 }
 
 .piece .price_div
@@ -105,7 +106,27 @@
         color: $text-dark-color;
     }
 }
+
 #boutiqueFiltersBackdrop { display: none; }
+@media(min-width:500px) {
+    .boutique-body {
+        display: flex;
+        flex-direction: row;
+    }
+    .boutiqueFiltersContainer {
+        padding-top: 0;
+        position: sticky;
+        top: 0;
+        width: 150px;
+        #boutiqueTagFilters {
+            columns: 1;
+        }      
+    }
+    .boutique_list {
+        width: calc(100% - 150px);
+    }
+}
+
 @media(max-width:500px) {
     #boutiqueFiltersBackdrop {
         background-color: rgba(0,0,0,0.5);
@@ -121,6 +142,10 @@
         padding: 0px;
         .header, .content {
             padding: 20px;
+        }
+        .header {
+            position: sticky;
+            top: 0;
         }
         flex-direction: column;
         display: none;

@@ -3,7 +3,7 @@
 
 import './globals'
 
-const allMaterials = ["raku", "gres", "porcelaine"];
+const allMaterials = ["raku", "gres", "porcelaine", "faience"];
 let filters: { [key: string]: boolean } = {}
 
 
@@ -107,7 +107,7 @@ function createFilterBoxes() {
   }
 
   setHtml('boutiqueTagFilters', allTags.map(render).join("\n"));
-  setHtml('boutiqueMaterialFilters', ["raku", "grès", "porcelaine"].map(render).join("\n"));
+  setHtml('boutiqueMaterialFilters', ["raku", "grès", "porcelaine", "faïence"].map(render).join("\n"));
 }
 
 function shuffleBoutiqueList() {

@@ -1,7 +1,7 @@
 // To compile:
 // tsc  --target es2019 ./ts/boutique.ts --outDir ./js; sed -i 's/^import/\/\/import/' ./js/boutique.js
 //import './globals';
-const allMaterials = ["raku", "gres", "porcelaine"];
+const allMaterials = ["raku", "gres", "porcelaine", "faience"];
 let filters = {};
 function formatIdentifier(str) {
     for (let i = 0; i < 10; i++)
@@ -74,8 +74,8 @@ function createFilterBoxes() {
     function render(tag) {
         let formatedTag = formatIdentifier(tag);
         let count = document.getElementsByClassName(formatedTag).length;
-        if (!count)
-            return "";
+        // if (!count)
+            // return "";
         return `
     <li class="form-check">
     <input  onchange="setBoutiqueFilter('${formatedTag}', this.checked)"  class="form-check-input" type="checkbox" value="" id="checkboxFilter${tag}">
@@ -90,7 +90,7 @@ function createFilterBoxes() {
             elt.innerHTML = html;
     };
     setHtml('boutiqueTagFilters', allTags.map(render).join("\n"));
-    setHtml('boutiqueMaterialFilters', ["raku", "grès", "porcelaine"].map(render).join("\n"));
+    setHtml('boutiqueMaterialFilters', ["raku", "grès", "porcelaine", "faïence"].map(render).join("\n"));
 }
 function shuffleBoutiqueList() {
     let list = document.getElementById("boutique_list");
