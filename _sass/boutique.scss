@@ -5,7 +5,7 @@
 {
     display: flex;
     flex-flow: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 
@@ -22,7 +22,7 @@
     transition: ease-out;
     transition-duration: 500ms;
 
-    margin: 10px 0;
+    margin: 10px 10px;
     font-size: 15px;
 
 }
@@ -99,7 +99,7 @@
     padding-top: 70px;
     top: 0;
     display: flex;
-    position: sticky;
+
     .close-button { display: none;   float: right;  display: inline;    color: $text-dark-color;     }       
     .header {
         background-color: $primary-color;
@@ -114,16 +114,20 @@
         flex-direction: row;
     }
     .boutiqueFiltersContainer {
+        overflow-y: scroll;
+        overflow-x: hidden;
         padding-top: 0;
+        width: 170px;
         position: sticky;
-        top: 0;
-        width: 150px;
+        top: 70px;
+        height: calc(100vh - 70px);
+    
         #boutiqueTagFilters {
             columns: 1;
         }      
     }
     .boutique_list {
-        width: calc(100% - 150px);
+        width: calc(100% - 170px);
     }
 }
 

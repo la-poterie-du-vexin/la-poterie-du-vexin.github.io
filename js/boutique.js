@@ -74,8 +74,8 @@ function createFilterBoxes() {
     function render(tag) {
         let formatedTag = formatIdentifier(tag);
         let count = document.getElementsByClassName(formatedTag).length;
-        // if (!count)
-            // return "";
+        if (!count)
+            return "";
         return `
     <li class="form-check">
     <input  onchange="setBoutiqueFilter('${formatedTag}', this.checked)"  class="form-check-input" type="checkbox" value="" id="checkboxFilter${tag}">

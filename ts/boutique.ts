@@ -121,7 +121,7 @@ function shuffleBoutiqueList() {
 createFilterBoxes();
 shuffleBoutiqueList();
 
-function toggleDisplayBlock(elt_: HTMLElement|string) {
+function toggleDisplayBlock(elt_: HTMLElement | string) {
   let elt = elt_ as HTMLDivElement;
   if (!elt.classList)
     elt = document.getElementById(elt_ as string) as HTMLDivElement;
