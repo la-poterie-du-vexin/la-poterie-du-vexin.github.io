@@ -99,7 +99,7 @@ function shuffleBoutiqueList() {
     }
 }
 createFilterBoxes();
-shuffleBoutiqueList();
+// disable for now: shuffleBoutiqueList();
 function toggleDisplayBlock(elt_) {
     let elt = elt_;
     if (!elt.classList)

@@ -119,7 +119,7 @@ function shuffleBoutiqueList() {
 }
 
 createFilterBoxes();
-shuffleBoutiqueList();
+// disable for now: shuffleBoutiqueList();
 
 function toggleDisplayBlock(elt_: HTMLElement | string) {
   let elt = elt_ as HTMLDivElement;
