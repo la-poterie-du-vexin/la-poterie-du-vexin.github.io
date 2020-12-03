@@ -15,7 +15,7 @@
     @include full-width-on-mobile;
 
     
-    font-weight: 600;
+    // font-weight: 600;
     width: 300px;
     border: 2px none #aaaaaa;
     padding-bottom: 10px;
@@ -25,14 +25,13 @@
 
     margin: 10px 10px;
     font-size: 15px;
-
 }
 
 .boutique_list .piece .title {
     padding: 0px;
 }
 .boutique_list .piece .content {
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .boutique_list ul, .boutique_page ul {
@@ -67,7 +66,12 @@
     text-align: right;
     color: $terciary-color;
 }
- .piece .price
+
+.boutique_list .piece .price_div {
+    margin-top: -50px;
+}
+
+.piece .price
 {
     font-weight: 700;
     font-size: 25px;
