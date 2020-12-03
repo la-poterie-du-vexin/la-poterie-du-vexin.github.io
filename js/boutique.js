@@ -80,7 +80,7 @@ function createFilterBoxes() {
     <li class="form-check">
     <input  onchange="setBoutiqueFilter('${formatedTag}', this.checked)"  class="form-check-input" type="checkbox" value="" id="checkboxFilter${tag}">
     <label class="form-check-label" for="checkboxFilter${tag}">
-      ${tag} <span id="tagCount${formatedTag}">(${count})
+      ${tag.toLowerCase()} <span id="tagCount${formatedTag}">(${count})
     </label>
   </li>`;
     }
