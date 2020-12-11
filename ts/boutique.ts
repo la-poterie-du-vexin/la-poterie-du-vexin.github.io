@@ -106,7 +106,7 @@ function createFilterBoxes() {
     if (elt) elt.innerHTML = html;
   }
 
-  setHtml('boutiqueTagFilters', allTags.map(render).join("\n"));
+  setHtml('boutiqueTagFilters', allTags.sort().map(render).join("\n"));
   setHtml('boutiqueMaterialFilters', ["raku", "grès", "porcelaine", "faïence"].map(render).join("\n"));
 }
 
