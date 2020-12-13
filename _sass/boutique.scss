@@ -99,6 +99,14 @@
 
 }
 
+.tags span {
+    background-color: $primary-color;
+    color: $text-dark-color;
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
 .boutiqueFiltersContainer {
     background-color:#ffe5d7;
     padding-top: 70px;
@@ -122,7 +130,7 @@
         overflow-y: scroll;
         overflow-x: hidden;
         padding-top: 0;
-        width: 200px;
+        width: 220px;
         position: sticky;
         top: 70px;
         height: calc(100vh - 70px);
@@ -132,7 +140,7 @@
         }      
     }
     .boutique_list {
-        width: calc(100% - 200px);
+        width: calc(100% - 220px);
     }
 }
 

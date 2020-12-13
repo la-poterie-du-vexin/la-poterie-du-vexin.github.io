@@ -93,9 +93,10 @@ function createFilterBoxes() {
     if (!count) return "";
 
     return `
-    <li class="form-check">
-    <input  onchange="setBoutiqueFilter('${formatedTag}', this.checked)"  class="form-check-input" type="checkbox" value="" id="checkboxFilter${tag}">
-    <label class="form-check-label" for="checkboxFilter${tag}">
+    <li>
+    <input class="filterTagCheckbox form-check-input" tagIdentifier='${formatedTag}'
+           oninput="setBoutiqueFilter('${formatedTag}', this.checked)" type="checkbox" value="" id="checkboxFilter${tag}">
+    <label style="display: inline" for="checkboxFilter${tag}">
       ${tag.toLowerCase()} <span id="tagCount${formatedTag}">(${count})
     </label>
   </li>`
@@ -136,3 +137,8 @@ function toggleFilterModal() {
   toggleDisplayBlock('boutiqueFiltersBackdrop');
   toggleDisplayBlock('boutiqueFiltersContainer');
 }
+
+window.onload = () => {
+  for (let elt of document.getElementsByClassName("filterTagCheckbox"))
+    setBoutiqueFilter(elt.getAttribute("tagIdentifier") as string, (elt as any).checked)
+};
