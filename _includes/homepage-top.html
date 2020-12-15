@@ -1,36 +1,50 @@
 <!-- Intro Header -->
 
 <header class="intro">
-    <div class="intro-text">
-        <div class="container" style="display:flex; flex-direction: column; flex-flow: wrap; justify-content: center; padding-top: 80px">
+    <video class="video-desktop" autoplay muted>
+        <source src="img/video.webm" type="video/webm">
+    </video>
+
+    <div class="intro-text-container">
+        <div class="intro-text">
+
+            <div class="container"
+                style="display:flex; flex-direction: column; flex-flow: wrap; justify-content: center; padding-top: 80px">
 
 
-            <img class=big-logo-homepage src="img/big_logo_notext_white.png" alt="La Poterie Du Vexin">
-            <div style="min-width: 400;">
-                <h1 class="brand-heading text-dark-color" style="font-size: 40px;">
-                    la Poterie du
-                    Vexin
-                </h1>
+                <img class=big-logo-homepage src="img/big_logo_notext_white.png" alt="La Poterie Du Vexin">
+                <div style="min-width: 400;">
 
-                <h2 class="intro-text text-dark-color">
-                    <p>Vente de céramiques artisanales utilitaires décoratives<br /> et cours de poterie
-                        au tour dans l'Eure (27)</p>
-                    <a href="/cours-de-poterie-tour-louviers-les-andelys-eure" class="btn btn-lg primary-background">
-                        <i class='fa fa-user-graduate'></i> les Cours
-                    </a>
-                    <a href="/vente-de-poteries-artisanales" class="btn  btn-lg secondary-background">
-                        <i class='fa fa-shopping-bag'></i> la Boutique
-                    </a>
-                    <a href="/atelier-de-poterie" class="btn  btn-lg terciary-background">
-                        <i class='fa fa-warehouse'></i>  l'Atelier
-                    </a>
-                    <br /><br />
 
+                    <h1 class="brand-heading text-dark-color" >
+                        la Poterie du
+                        Vexin
+                    </h1>
+                    <video class="video-mobile" autoplay muted>
+                        <source src="img/video.webm" type="video/webm">
+                    </video>
+                
+
+                    <h2 class="intro-text text-dark-color">
+                        <p>Vente de céramiques artisanales utilitaires décoratives<br /> et cours de poterie
+                            au tour dans l'Eure (27)</p>
+                        <a href="/cours-de-poterie-tour-louviers-les-andelys-eure"
+                            class="btn btn-lg primary-background">
+                            <i class='fa fa-user-graduate'></i> Cours
+                        </a>
+                        <a href="/vente-de-poteries-artisanales" class="btn  btn-lg secondary-background">
+                            <i class='fa fa-shopping-bag'></i> Boutique
+                        </a>
+                        <a href="/atelier-de-poterie" class="btn  btn-lg terciary-background">
+                            <i class='fa fa-warehouse'></i> l'Atelier
+                        </a>
+                        <br /><br />
+
+                </div>
             </div>
         </div>
-
     </div>
-    <div id=mosaic class="intro-mosaic">
+    <!-- <div id=mosaic class="intro-mosaic">
         <img src="img/photos_en_vrac/porcelaine_tout_juste_finies_de_tourner.jpg" height=150 />
         <img src="img/cours/enfant3_512.JPG" height=150 />
         <img src="img/tour.jpg" height=150 />
@@ -43,8 +57,8 @@
         <img src="img/photos_en_vrac/la_grande_serie_2.jpg" height=150 />
 
 
-    </div>
-<script>
-    autoScrollMosaic("mosaic");
-</script>
+    </div> -->
+    <script>
+        autoScrollMosaic("mosaic");
+    </script>
 </header>

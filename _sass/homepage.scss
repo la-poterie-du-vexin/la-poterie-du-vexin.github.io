@@ -1,5 +1,56 @@
 @import "colors";
 
+.intro video {
+  margin-top: 60px;
+}
+
+@media(min-width:1000px) {
+
+  .intro .video-mobile {
+    display: none;
+  }
+  
+.intro .video-desktop {
+  position: absolute;
+  // margin-right: auto;
+  // margin-left: auto;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  max-height: calc(100vh - 60px);
+  z-index: 0;
+}
+
+.intro-text-container {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+}
+
+}
+
+@media(max-width:1000px) {
+
+.intro .video-desktop {
+  display: none;
+}
+
+.intro .video-mobile {
+  // position: absolute;
+  // right: 0;
+  // top: 0;
+  border-radius: 10px;
+  max-width: 90%;
+  height: auto;
+  // min-height: 100%;
+  z-index: 0;
+}
+
+    .intro {
+    background: url(/img/pots.jpg)  repeat top center scroll;
+  }
+}
 
 .intro {
   width: 100%;
@@ -9,14 +60,16 @@
   box-sizing: border-box;
   text-align: center;
   background-size: fill;
-  background: url(/img/pots.jpg)  repeat top center scroll;
 }
 
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
 
+
+
 .intro-text {
+  z-index: 1000;
   background: radial-gradient(rgba(0,0,0,0.5) 40%, rgba(0,0,0,0) 70%);
   border-radius: 10px;
   padding: 10px;
@@ -72,7 +125,25 @@
 .intro-mosaic img {
     display: block
   }
+
 .intro .btn {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border:solid 5px #ffffff57;
+}
+
+
+@media(max-width:500px) {
+  // .big-logo-homepage { display: none; }
+  .brand-heading { font-size: 30px; }
+  .intro-text {
+    padding: 0px;
+  }
+  .intro .container {
+    padding: 0px;
+  }
+  .intro .btn {
+    font-size: 14px;
+    padding: 5px;
+    // border: 3px;
+  }
 }
