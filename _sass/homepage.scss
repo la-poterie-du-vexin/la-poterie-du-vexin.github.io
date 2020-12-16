@@ -1,7 +1,7 @@
 @import "colors";
 
 .intro video {
-  margin-top: 60px;
+  // margin-top: 60px;
 }
 
 @media(min-width:1000px) {
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   min-width: 100vw;
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh);
   z-index: 0;
 }
 
